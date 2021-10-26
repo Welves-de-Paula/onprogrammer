@@ -8,7 +8,9 @@ const routes = [
   {
     path: '/',
     name: 'Home',
-    component: Home
+    component: Home,
+    meta: { layout: 'AppLayout', auth: 'guest', },
+
   },
   {
     path: '/about',
@@ -29,3 +31,7 @@ const router = new VueRouter({
 })
 
 export default router
+
+
+
+

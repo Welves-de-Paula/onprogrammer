@@ -10,6 +10,8 @@
   },
   "dependencies": {
     "@mdi/font": "5.9.55",
+    "axios": "^0.21.1",
+    "date-fns": "^2.23.0",
     "register-service-worker": "^1.7.1",
     "roboto-fontface": "*",
     "vue": "^2.6.11",
@@ -24,7 +26,10 @@
     "@vue/cli-service": "~4.5.0",
     "vue-cli-plugin-express": "^1.0.2",
     "vue-cli-plugin-vuetify": "^2.4.3",
-    "vue-template-compiler": "^2.6.11"
+    "vue-template-compiler": "^2.6.11",
+    "sass": "~1.32.0",
+    "sass-loader": "^10.0.0",
+    "vuetify-loader": "^1.7.0"
   },
   "browserslist": [
     "> 1%",
