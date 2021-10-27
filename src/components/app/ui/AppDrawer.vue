@@ -1,7 +1,13 @@
 <template>
-  <v-navigation-drawer dense v-bind="$attrs" v-on="$listeners">
+  <v-navigation-drawer
+    class="app-drawer"
+    dense
+    dark
+    v-bind="$attrs"
+    v-on="$listeners"
+  >
     <v-list nav dense>
-      <v-list-item-group color="primary">
+      <v-list-item-group>
         <v-list-item v-for="(item, i) in items" :key="i">
           <v-list-item-icon>
             <v-icon v-text="item.icon"></v-icon>

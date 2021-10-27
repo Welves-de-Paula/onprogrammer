@@ -6,7 +6,7 @@ import store from './store'
 import vuetify from './plugins/vuetify'
 import 'roboto-fontface/css/roboto/roboto-fontface.css'
 import '@mdi/font/css/materialdesignicons.css'
-// import '@/styles/styles.scss'
+import '@/styles/styles.sass'
 
 Vue.config.productionTip = false
 

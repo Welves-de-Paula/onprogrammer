@@ -1,16 +1,15 @@
 {
-  "name": "onprogrammer",
+  "name": "frontend",
   "version": "0.1.0",
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
-    "express": "vue-cli-service express:watch",
-    "express:run": "vue-cli-service express:run"
+    "build": "rm -rf ../public/{js,css,img} && vue-cli-service build --no-clean"
   },
   "dependencies": {
     "@mdi/font": "5.9.55",
     "axios": "^0.21.1",
+    "core-js": "^3.6.5",
     "date-fns": "^2.23.0",
     "register-service-worker": "^1.7.1",
     "roboto-fontface": "*",
@@ -20,15 +19,15 @@
     "vuex": "^3.4.0"
   },
   "devDependencies": {
+    "@vue/cli-plugin-babel": "~4.5.0",
     "@vue/cli-plugin-pwa": "~4.5.0",
     "@vue/cli-plugin-router": "~4.5.0",
     "@vue/cli-plugin-vuex": "~4.5.0",
-    "@vue/cli-service": "~4.5.0",
-    "vue-cli-plugin-express": "^1.0.2",
-    "vue-cli-plugin-vuetify": "^2.4.3",
-    "vue-template-compiler": "^2.6.11",
+    "@vue/cli-service": "^3.12.1",
     "sass": "~1.32.0",
     "sass-loader": "^10.0.0",
+    "vue-cli-plugin-vuetify": "^2.4.1",
+    "vue-template-compiler": "^2.6.11",
     "vuetify-loader": "^1.7.0"
   },
   "browserslist": [
