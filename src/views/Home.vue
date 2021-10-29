@@ -1,15 +1,14 @@
 <template>
-  <hello-world />
+  <div><v-btn @click="name()" color="success">text</v-btn></div>
+  <!-- <hello-world /> -->
 </template>
 
 <script>
-  import HelloWorld from '../components/HelloWorld'
-
-  export default {
-    name: 'Home',
-
-    components: {
-      HelloWorld,
+export default {
+  methods: {
+    name() {
+      console.log(process.env);
     },
-  }
+  },
+};
 </script>
