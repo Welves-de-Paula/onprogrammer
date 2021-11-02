@@ -14,7 +14,7 @@
 
 <script>
 // import AppNotificationBadge from "./AppNotificationBadge.vue";
-import AppBarUserMenu from "./AppBarUserMenu.vue";
+import AppBarUserMenu from "../sections/AppBarUserMenu.vue";
 export default {
   components: { AppBarUserMenu },
   data() {

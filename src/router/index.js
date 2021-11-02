@@ -2,14 +2,17 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
 
+import auth from './modules/auth.js'
 Vue.use(VueRouter)
 
 const routes = [
+  ...auth,
+
   {
     path: '/',
     name: 'Home',
     component: Home,
-    meta: { layout: 'AppLayout', auth: 'guest', },
+    meta: { layout: 'AppLayout' },
 
   },
   {

@@ -22,15 +22,9 @@
   </v-app>
 </template>
 
-
- 
-
-
-
-
 <script>
-import AppDrawer from "../components/app/ui/AppDrawer.vue";
-import AppTopBar from "../components/app/ui/AppTopBar.vue";
+import AppDrawer from "../components/app/sections/AppDrawer.vue";
+import AppTopBar from "../components/app/sections/AppTopBar.vue";
 export default {
   components: { AppDrawer, AppTopBar },
   data: () => ({ drawer: null }),
