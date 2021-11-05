@@ -4,26 +4,16 @@
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
-    "build": "rm -rf ../public/{js,css,img} && vue-cli-service build --no-clean",
-    "dev": "ts-node-dev src/server.ts",
-    "typeorm": "ts-node-dev node_modules/typeorm/cli.js"
+    "build": "rm -rf ../public/{js,css,img} && vue-cli-service build --no-clean"
   },
   "dependencies": {
     "@mdi/font": "5.9.55",
     "axios": "^0.21.1",
     "core-js": "^3.6.5",
     "date-fns": "^2.23.0",
-    "express": "^4.17.1",
     "firebase": "^9.2.0",
-    "mysql": "^2.18.1",
-    "reflect-metadata": "^0.1.13",
     "register-service-worker": "^1.7.1",
     "roboto-fontface": "*",
-    "socket.io": "^4.3.1",
-    "socket.io-client": "^4.3.2",
-    "sqlite3": "^5.0.2",
-    "typeorm": "^0.2.38",
-    "uui": "^1.0.7",
     "vue": "^2.6.11",
     "vue-router": "^3.2.0",
     "vuetify": "^2.4.0",
