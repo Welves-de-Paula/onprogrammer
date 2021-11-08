@@ -3,6 +3,7 @@ module.exports = {
     'vuetify'
   ],
 
+  outputDir: './backend/public',
 
   // output built static files to Laravel's public dir.
   // note the "build" script in package.json needs to be modified as well.
@@ -14,4 +15,8 @@ module.exports = {
   // indexPath: process.env.NODE_ENV === 'production'
   //   ? './backend/backend/public/index.html'
   //   : 'index.html'
+
+  indexPath: process.env.NODE_ENV === 'production'
+  ? './html/index.html'
+  : 'index.html'
 }
