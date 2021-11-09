@@ -1,5 +1,6 @@
 import { http } from "./http";
 import "./websocket/client";
 import "./websocket/admin";
-
-http.listen(3333, () => console.log("Server is running on port 3333"));
+const dotenv = require ('dotenv'); 
+dotenv.config (); 
+ http.listen(process.env.BACKEND_PORT, () => console.log(`Sua porta é ${process.env.BACKEND_PORT}`));
