@@ -4,20 +4,30 @@
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
-    "build": "rm -rf ../public/{js,css,img} && vue-cli-service build --no-clean"
+    "build": "rm -rf ../public/{js,css,img} && vue-cli-service build --no-clean",
+    "dev": "ts-node-dev backend/server.ts"
   },
   "dependencies": {
     "@mdi/font": "5.9.55",
     "axios": "^0.21.1",
     "core-js": "^3.6.5",
     "date-fns": "^2.23.0",
+    "dotenv": "^10.0.0",
     "firebase": "^9.2.0",
     "register-service-worker": "^1.7.1",
     "roboto-fontface": "*",
     "vue": "^2.6.11",
     "vue-router": "^3.2.0",
     "vuetify": "^2.4.0",
-    "vuex": "^3.4.0"
+    "vuex": "^3.4.0",
+    "ejs": "^3.1.6",
+    "express": "^4.17.1",
+    "reflect-metadata": "^0.1.13",
+    "socket.io": "^4.0.1",
+    "socket.io-client": "^4.0.1",
+    "sqlite3": "^5.0.2",
+    "typeorm": "^0.2.32",
+    "uuid": "^8.3.2"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "~4.5.0",
@@ -29,7 +39,12 @@
     "sass-loader": "^10.0.0",
     "vue-cli-plugin-vuetify": "^2.4.1",
     "vue-template-compiler": "^2.6.11",
-    "vuetify-loader": "^1.7.0"
+    "vuetify-loader": "^1.7.0",
+    "@types/express": "^4.17.11",
+    "@types/socket.io": "^2.1.13",
+    "@types/uuid": "^8.3.0",
+    "ts-node-dev": "^1.1.6",
+    "typescript": "^4.2.4"
   },
   "browserslist": [
     "> 1%",
